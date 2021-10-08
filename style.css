@@ -1,0 +1,18 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+#header{
+  height: 70px;
+}
+.title{
+  color: #00ced1;
+  font-size: xxx-large;
+  margin-bottom: 0px;
+  letter-spacing: 0.1em;
+}
+.subtitle{
+  font-size: xx-small;
+  color: #5bd1d7;
+  margin-bottom: 0px;
+}
