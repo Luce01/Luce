@@ -1,3 +1,8 @@
+/* 完成した消して */
+#main{
+  margin-bottom: 600px;
+}
+
 *{
   padding: 0px;
   margin: 0px;
@@ -31,3 +36,19 @@
   color: rgb(118, 114, 114);
 }
 
+/* plan */
+.plan-title{
+  color: #108284;
+}
+.plan-name{
+  font-size: 1rem;
+  color: #5bd1d7;
+}
+.paln-desription{
+  color: rgb(118, 114, 114);
+  font-size: 0.8rem;
+}
+.plan-price{
+  letter-spacing: 0.09rem;
+  color: #5bd1d7;
+}
