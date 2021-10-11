@@ -1,0 +1,101 @@
+/* 完成した消して */
+#footer{
+  margin-bottom: 600px;
+}
+
+*{
+  padding: 0px;
+  margin: 0px;
+}
+#header{
+  height: 70px;
+  background-color: white;
+  box-shadow: 0px 5px 5px 0px rgba(222, 219, 219, 0.5);
+}
+.title{
+  color: #108284;
+  font-size: xxx-large;
+  margin-bottom: 0px;
+  letter-spacing: 0.1em;
+}
+.subtitle{
+  font-size: xx-small;
+  color: #5bd1d7;
+  margin-bottom: 0px;
+}
+/* 三段目 */
+.description h2{
+  color: #108284;
+}
+.description-font-weight{
+  font-weight: 100;
+  color: #5bd1d7;
+}
+.description p{
+  letter-spacing: 0.1em;
+  color: rgb(118, 114, 114);
+}
+
+/* plan */
+.plan-title{
+  color: #108284;
+}
+.plan-name{
+  font-size: 1rem;
+  color: #5bd1d7;
+}
+.paln-desription{
+  color: rgb(118, 114, 114);
+  font-size: 0.8rem;
+}
+.plan-price{
+  letter-spacing: 0.09rem;
+  color: #5bd1d7;
+}
+.plan-detail{
+  letter-spacing: 0.2em;
+  border: 1px solid rgb(222, 226, 230);
+  border-radius: 1px;
+  font-size: small; 
+}
+.img-youtube{
+  height: 230px;
+}
+
+.QA h1 {
+  color: #108284;
+  position: relative;
+  padding: 0.25em 1em;
+  border-top: solid 2px rgb(118, 114, 114);
+  border-bottom: solid 2px rgb(118, 114, 114);
+}
+.QA h1:before, .QA h1:after {
+  content: '';
+  position: absolute;
+  top: -7px;
+  width: 2px;
+  height: -webkit-calc(100% + 14px);
+  height: calc(100% + 14px);
+  background-color: rgb(118, 114, 114);
+}
+.QA h1:before {
+  left: 7px;
+}
+.QA h1:after {
+  right: 7px;
+}
+
+
+#footer{
+  background-color: rgb(118, 114, 114);
+  color: aliceblue;
+}
+#footer ul{
+  list-style: none;
+}
+.footer-icon{
+  justify-content: space-around;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
