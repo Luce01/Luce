@@ -1,0 +1,69 @@
+/* 枠組み */
+.detail-title {
+  background: rgb(118, 114, 114);
+  border: 1px solid rgb(118, 114, 114);
+  margin-right: 120px;
+}
+
+.detail-title h3 {
+  color: white;
+  font-size: medium;
+  margin-bottom: 0px;
+  font-weight: 300;
+}
+
+.detail-box {
+  border: 1px solid rgb(118, 114, 114);
+  font-size: 100%;
+  padding: 20px;
+}
+/* 持ち物 */
+.belongings li {
+  color: rgb(118, 114, 114);
+  padding-top: 5px;
+}
+
+/* 料金 */
+.price-detail h4 {
+  color: rgb(119, 195, 223);
+  font-size: xx-large;
+  letter-spacing: 0.2em;
+}
+
+.price-detail p {
+  color: rgb(119, 195, 223);
+  font-size: large;
+  letter-spacing: 0.2em;
+}
+
+/* 予約リンク */
+.booking-doble{
+  margin: 0 50px;
+  border: solid 3px rgb(119, 195, 223);
+}
+.booking {
+  font-size: 100%;
+  padding: 15px;
+  background-color: rgb(119, 195, 223);
+}
+.booking p{
+  margin-bottom: 0px;
+  font-size: medium;
+  font-weight: 400;
+  color: white;
+}
+.booking-icon i{
+  font-size: 30px;
+  vertical-align: -3px;
+}
+/* こんな写真とれるよ */
+.detail-images img{
+  width: 90%;
+}
+.plan-detail-images{
+  padding: 20px 10px;
+}
+.plan-detail-images p{
+  font-size: small;
+  color: rgb(118, 114, 114);
+}

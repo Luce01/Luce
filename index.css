@@ -13,7 +13,7 @@
   box-shadow: 0px 5px 5px 0px rgba(222, 219, 219, 0.5);
 }
 .title{
-  color: #108284;
+  color: rgb(119, 195, 223);
   font-size: xxx-large;
   margin-bottom: 0px;
   letter-spacing: 0.1em;
@@ -25,7 +25,7 @@
 }
 /* 三段目 */
 .description h2{
-  color: #108284;
+  color: rgb(119, 195, 223);
 }
 .description-font-weight{
   font-weight: 100;
@@ -38,7 +38,7 @@
 
 /* plan */
 .plan-title{
-  color: #108284;
+  color: rgb(119, 195, 223);
 }
 .plan-name{
   font-size: 1rem;
@@ -63,7 +63,7 @@
 }
 
 .QA h1 {
-  color: #108284;
+  color: rgb(119, 195, 223);
   position: relative;
   padding: 0.25em 1em;
   border-top: solid 2px rgb(118, 114, 114);
