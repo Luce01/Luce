@@ -10,12 +10,15 @@
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="description.css">
 </head>
 
 <body>
   <header id="header" class="sticky-top">
-    <h1 class="title text-center">Luce</h1>
-    <h2 class="subtitle text-center">OKINAWA</h2>
+    <a href="index.html">
+      <h1 class="title text-center">Luce</h1>
+      <h2 class="subtitle text-center">OKINAWA</h2>
+    </a>
   </header>
   <div id="main">
     <div class="main-img mt-2">
@@ -44,7 +47,44 @@
       <h1 class="py-4">よくあるご質問</h1>
     </div>
   </div>
-  <footer id="footer" class="text-center mt-5 pb-4 pt-4">
+  <footer class="fixed-bottom d-flex justify-content-center text-center">
+    <div class="footer-box footer-mobile w-33 ">
+      <a class="d-flex justify-content-around pt-2 footer-box-link" href="tel:000-1234-xxxx">
+        <i class="fas fa-mobile-alt ms-1"></i>
+        <div class="footer-LINE-mozi">
+          <p>電話での<br>お問い合わせ</p>
+        </div>
+      </a>
+    </div>
+    <div class="footer-box footer-LINE w-33 ">
+      <a class="d-flex justify-content-around pt-2 footer-box-link" href="https://lin.ee/dYhg1So">
+        <i class="fab fa-line ms-1"></i>
+        <div class="footer-LINE-mozi">
+          <p>LINEで<br>お問い合わせ</p>
+        </div>
+      </a>
+    </div>
+
+
+    <div class="footer-box footer-calendar w-33">
+      <a class="d-flex justify-content-around pt-2 footer-box-link" href="https://reserva.be/photoluce/reserve">
+        <i class="far fa-calendar-alt ms-1"></i>
+        <div class="footer-LINE-mozi">
+          <p>空き状況の<br>確認・ご予約</p>
+        </div>
+      </a>
+    </div>
+    <div class="footer-box footer-insta w-33 ">
+      <a class="d-flex justify-content-around pt-2 footer-box-link" href="#">
+        <i class="fab fa-instagram ms-1"></i>
+        <div class="footer-LINE-mozi">
+          <p>Luce公式<br>Instagram</p>
+        </div>
+      </a>
+    </div>
+  </footer>
+
+  <div id="footer" class="text-center mt-5 pb-5 pt-4">
     <h1>Luce</h1>
     <ul>
       <li class="pb-2">Okinawa 080-xxxx-xxxx</li>
@@ -56,7 +96,8 @@
       <i class="fab fa-youtube-square"></i>
     </div>
     <p>Copyright 2021 &copy; Luce</p>
-  </footer>
+  </div>
+
 </body>
 
 </html>
