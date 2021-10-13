@@ -17,6 +17,10 @@
   font-size: 100%;
   padding: 20px;
 }
+/* タイトル */
+.description-title h2{
+  color: #00CCCC;
+}
 /* 持ち物 */
 .belongings li {
   color: rgb(118, 114, 114);
@@ -25,13 +29,13 @@
 
 /* 料金 */
 .price-detail h4 {
-  color: rgb(119, 195, 223);
+  color: #009999;
   font-size: xx-large;
   letter-spacing: 0.2em;
 }
 
 .price-detail p {
-  color: rgb(119, 195, 223);
+  color: #009999;
   font-size: large;
   letter-spacing: 0.2em;
 }
@@ -39,12 +43,15 @@
 /* 予約リンク */
 .booking-doble{
   margin: 0 50px;
-  border: solid 3px rgb(119, 195, 223);
+  border: solid 3px #00CCCC;
+}
+.booking a{
+  text-decoration:none; 
 }
 .booking {
   font-size: 100%;
   padding: 15px;
-  background-color: rgb(119, 195, 223);
+  background-color: #00CCCC;
 }
 .booking p{
   margin-bottom: 0px;
@@ -66,4 +73,62 @@
 .plan-detail-images p{
   font-size: small;
   color: rgb(118, 114, 114);
+}
+/* footer */
+.w-33{
+  width: 25%;
+  height: 40px;
+}
+.footer-LINE{
+  background-color: #00b900;
+  
+}
+.footer-LINE i{
+  color: white;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-LINE-mozi p{
+  font-size: x-small;
+  margin-bottom: 0px;
+  color: white;
+}
+
+.footer-box-link{
+  text-decoration:none; 
+}
+/* 電話予約 */
+.footer-mobile{
+  background-color: #009999;
+}
+.footer-mobile i{
+  color: white;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*  */
+.footer-calendar{
+  background-color: grey;
+}
+.footer-calendar i{
+  color: white;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-insta{
+  background-color: #00CCCC;
+}
+.footer-insta i{
+  color: white;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
