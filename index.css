@@ -1,63 +1,77 @@
-*{
+* {
   padding: 0px;
   margin: 0px;
 }
-* a{
-  text-decoration:none; 
+
+* a {
+  text-decoration: none;
 }
-#header{
+
+#header {
   height: 50px;
   background-color: white;
   box-shadow: 0px 5px 5px 0px rgba(222, 219, 219, 0.5);
 }
-.title{
+
+.title {
   color: #009999;
   font-size: xx-large;
   margin-bottom: 0px;
   letter-spacing: 0.2em;
 }
-.subtitle{
+
+.subtitle {
   font-size: xx-small;
   font-weight: 100;
   color: #00CCCC;
   margin-bottom: 0px;
 }
+
 /* 三段目 */
-.description h2{
+
+.description h2 {
   color: #009999;
 }
-.description-font-weight{
+
+.description-font-weight {
   font-weight: 100;
   color: #00CCCC;
 }
-.description p{
+
+.description p {
   letter-spacing: 0.1em;
   color: rgb(118, 114, 114);
 }
 
 /* plan */
-.plan-title{
+
+.plan-title {
   color: #009999;
 }
-.plan-name{
-  font-size: 1rem;
+
+.plan-name {
   color: #00CCCC;
+  font-weight: 500;
 }
-.paln-desription{
+
+.paln-desription {
   color: rgb(118, 114, 114);
   font-size: 0.8rem;
 }
-.plan-price{
+
+.plan-price {
   letter-spacing: 0.09rem;
   color: #00CCCC;
 }
-.plan-detail{
+
+.plan-detail {
   letter-spacing: 0.2em;
   border: 1px solid rgb(222, 226, 230);
   border-radius: 1px;
-  font-size: small; 
+  font-size: small;
 }
-.img-youtube{
+
+.img-youtube {
   height: 230px;
 }
 
@@ -68,6 +82,7 @@
   border-top: solid 2px rgb(118, 114, 114);
   border-bottom: solid 2px rgb(118, 114, 114);
 }
+
 .QA h1:before, .QA h1:after {
   content: '';
   position: absolute;
@@ -77,24 +92,178 @@
   height: calc(100% + 14px);
   background-color: rgb(118, 114, 114);
 }
+
 .QA h1:before {
   left: 7px;
 }
+
 .QA h1:after {
   right: 7px;
 }
 
-
-#footer{
+#footer {
   background-color: rgb(118, 114, 114);
   color: aliceblue;
 }
-#footer ul{
+
+#footer ul {
   list-style: none;
 }
-.footer-icon{
+
+.footer-icon {
   justify-content: space-around;
   margin-left: 80px;
   margin-right: 80px;
 }
 
+/* ハンバーガーmenu */
+
+#nav-drawer {
+  position: relative;
+}
+
+/*チェックボックス等は非表示に*/
+
+.nav-unshown {
+  display: none;
+}
+
+/*アイコンのスペース*/
+
+#nav-open {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+/*ハンバーガーの形をCSSで表現*/
+
+#nav-open span, #nav-open span:before, #nav-open span:after {
+  position: absolute;
+  height: 4px;
+  /*線の太さ*/
+  width: 35px;
+  /*長さ*/
+  border-radius: 3px;
+  background: #009999;
+  display: block;
+  content: '';
+  cursor: pointer;
+}
+
+/* 二本目の線の位置 */
+
+#nav-open span:before {
+  bottom: -10px;
+}
+
+/* 三本目の線の位置 */
+
+#nav-open span:after {
+  bottom: -20px;
+}
+
+/*閉じる用の薄黒箇所*/
+
+#nav-close {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0px;
+  right: 20px;
+  /* width: 100%; */
+  /* height: 100%; */
+  /* background: black; */
+  color: #009999;
+  font-size: xx-large;
+  /* opacity: 0; */
+  transition: .0s ease-in-out;
+}
+
+/*メニューの中身*/
+
+#nav-content {
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  width: 60%;
+  max-width: 330px;
+  /*最大幅（お好みで調整を）*/
+  height: 100%;
+  background: #fff;
+  transition: .1s ease-in-out;
+  -webkit-transform: translateX(-105%);
+  transform: translateX( 105%);
+}
+
+/*チェックがついたら表示させる*/
+
+#nav-input:checked~#nav-close {
+  display: block;
+  opacity: .5;
+}
+
+#nav-input:checked~#nav-content {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+  box-shadow: 6px 0 25px rgba(0, 0, 0, .15);
+}
+
+.header-logo-menu {
+  display: flex;
+  /* display: -moz-flex; */
+  /* display: -o-flex; */
+  display: -webkit-flex;
+  /* display: -ms-flex; */
+  flex-direction: row;
+  -moz-flex-direction: row;
+  -o-flex-direction: row;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+}
+
+/* 三本戦の位置 */
+
+#nav-drawer {
+  top: 15px;
+  right: 20px;
+}
+
+/*ロゴやサイトタイトルをセンタリング*/
+
+.logo-area {
+  text-align: center;
+  margin: auto;
+}
+
+.nav-detail {
+  margin-top: 50px;
+  list-style: none;
+}
+
+.nav-detail li {
+  padding-top: 30px;
+  margin-right: 20px;
+  color: rgb(118, 114, 114);
+  /* border-top: solid; */
+  border-bottom: solid 1px rgb(118, 114, 114, .2);
+}
+
+/* 自己紹介 */
+.photographer-box h2{
+  color: #009999;
+}
+.photographer-box h4{
+  color: #00CCCC;
+}
+.photographer-box p{
+  letter-spacing: 0.1em;
+}
+
+/* googleMap */
+.place{
+  color: #009999;
+}

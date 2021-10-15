@@ -15,14 +15,33 @@
 
 <body>
   <header id="header" class="sticky-top">
-    <a href="index.html">
-      <h1 class="title text-center">Luce</h1>
-      <h2 class="subtitle text-center">OKINAWA</h2>
-    </a>
+    <div class="header-logo-menu">
+      <div class="logo-area">
+        <a href="index.html">
+          <h1 class="title">Luce</h1>
+          <h2 class="subtitle text-center">OKINAWA</h2>
+      </div>
+      </a>
+      <div id="nav-drawer">
+        <input id="nav-input" type="checkbox" class="nav-unshown">
+        <label id="nav-open" for="nav-input"><span></span></label>
+        <label class="nav-unshown" id="nav-close" for="nav-input"><span><i class="fas fa-times"></i></span></label>
+        <div id="nav-content">
+          <ul class="nav-detail">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="description.html">南国満点星空フォトツアー</a></li>
+            <li><a>レビュー</a></li>
+            <li><a href="#googleMap">集合場所</a></li>
+            <li><a href="#Photographer">撮影者紹介</a></li>
+            <li><a href="qa.html">よくあるご質問</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </header>
   <div id="main">
     <div class="main-img mt-2">
-      <img src="main-img.jpg" alt="星空" title="星空" class="w-100">
+      <img src="img/main-img.jpg" alt="星空" title="星空" class="w-100">
     </div>
     <div class="description text-center mt-5">
       <h2 class="h4"><span class="description-font-weight pe-4">OKINAWA</span><span
@@ -32,20 +51,41 @@
     <div class="text-center mt-5 plan-title">
       <h2 class="h4">PHOTO PLAN</h2>
     </div>
+    <!-- 南国プラン -->
     <div class="plan text-center border mx-3 my-4 py-3">
-      <h3 class="plan-name mb-4">南国満点星空フォトツアー</h3>
-      <img src="main-img.jpg" alt="星空" title="星空" class="w-75">
+      <h3 class="plan-name mb-4 h3">南国満点星空フォトツアー</h3>
+      <img src="img/main-img.jpg" alt="星空" title="星空" class="w-75">
       <p class="w-75 m-auto mt-2 paln-desription">ビーチでの写真をメインにこだわりの写真をシンプルに残すプラン</p>
       <h4 class="h2 plan-price mt-3">￥4,000<span class="h6">（税込）</span></h4>
-      <a href="description.html" class="btn btn-outline-secondary plan-detail px-5 my-3">さらに詳しく見る</a>
+      <a href="description.html" class="btn btn-outline-secondary plan-detail px-5 my-3">>>さらに詳しく見る</a>
     </div>
+
+    <!-- 撮影者紹介 -->
+    <div id="Photographer"></div>
+    <div class="photographer-box text-center border mx-3 my-4 py-3">
+      <h2 class="h2 mb-4">Photographer</h2>
+      <img src="img/purofile.jpg" alt="Photographer" title="Photographer" class="w-75 rounded-circle">
+      <h4 class="mt-4 h3">宇野 涼雅</h4>
+      <p class="px-3 mt-3">フリーのカメラマンとして沖縄在住。ナチュラルな表情を引き出し、ご希望のカットや感動の一瞬を逃さず撮影いたします。</p>
+    </div>
+    <!-- googleMap -->
+    <div class=" mx-3 mt-5 text-center" id="googleMap">
+      <h3 class="mb-4 mt-4 place">集合場所</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.089798606282!2d125.3325207531452!3d24.723797198150685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34f456481bf875d9%3A0xac9a32d357504a29!2z44Kw44Op44Oz44Oe44O844Os!5e0!3m2!1sja!2sjp!4v1634279396932!5m2!1sja!2sjp"
+        class="w-100" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <!-- youtube -->
     <iframe class="w-100 px-3 img-youtube mt-4" src="https://www.youtube.com/embed/OyJllgCLL8g"
       title="YouTube video player" frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen></iframe>
-    <div class="QA text-center mt-5 mx-3">
-      <h1 class="py-4">よくあるご質問</h1>
-    </div>
+
+    <a href="qa.html">
+      <div class="QA text-center mt-5 mx-3" id="q">
+        <h1 class="py-4">よくあるご質問</h1>
+      </div>
+    </a>
   </div>
   <footer class="fixed-bottom d-flex justify-content-center text-center">
     <div class="footer-box footer-mobile w-33 ">
@@ -97,7 +137,7 @@
     </div>
     <p>Copyright 2021 &copy; Luce</p>
   </div>
-
+  <script type="text/javascript" src="index.js"></script>
 </body>
 
 </html>
